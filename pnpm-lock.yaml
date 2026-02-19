@@ -95,6 +95,12 @@ importers:
       '@vercel/analytics':
         specifier: 1.6.1
         version: 1.6.1(next@16.1.6(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(react@19.2.4)
+      ag-grid-community:
+        specifier: ^35.1.0
+        version: 35.1.0
+      ag-grid-react:
+        specifier: ^35.1.0
+        version: 35.1.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       autoprefixer:
         specifier: ^10.4.20
         version: 10.4.24(postcss@8.5.6)
@@ -1255,6 +1261,18 @@ packages:
         optional: true
       vue-router:
         optional: true
+
+  ag-charts-types@13.1.0:
+    resolution: {integrity: sha512-DytRM3CXli+Y013SC1Mr8lQBrhVTACK+11ilDHOhwUM0sRpmGuR51XFGcBKOliW1Vas1AycP31Cm3Pp0jx3hqw==}
+
+  ag-grid-community@35.1.0:
+    resolution: {integrity: sha512-yWFQfRNjv3KUBkHHzFdDOYGjPcDMU0B8Up4qG651diFlGRUGEGVs94SK73niWvk1FDZdpV9oWrwq3f30/qAoVg==}
+
+  ag-grid-react@35.1.0:
+    resolution: {integrity: sha512-n8pJh4RTpos8stzz91nEhTCZZdLy9bjQYAGxIxJ8ocVagnEsAk9T5Vz/VEKUhOGz36il68n7TVbVWSuUA3a+mg==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
+      react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
 
   aria-hidden@1.2.6:
     resolution: {integrity: sha512-ik3ZgC9dY/lYVVM++OISsaYDeg1tb0VtP5uL3ouh1koGOaUMDPpbFIei4JkFimWUFPn90sbMNMXQAIVOlnYKJA==}
@@ -2738,6 +2756,19 @@ snapshots:
     optionalDependencies:
       next: 16.1.6(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       react: 19.2.4
+
+  ag-charts-types@13.1.0: {}
+
+  ag-grid-community@35.1.0:
+    dependencies:
+      ag-charts-types: 13.1.0
+
+  ag-grid-react@35.1.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4):
+    dependencies:
+      ag-grid-community: 35.1.0
+      prop-types: 15.8.1
+      react: 19.2.4
+      react-dom: 19.2.4(react@19.2.4)
 
   aria-hidden@1.2.6:
     dependencies:
